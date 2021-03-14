@@ -9,6 +9,8 @@ app.get("/courses", (request, response) => {
 })
 
 app.post("/courses", (request, response) => {
+    const body = request.body;
+    console.log(body);
     return response.json({courses: ["Curso 1", "Curso 2", "Curso 3", "Curso 4"]});
 })
 
