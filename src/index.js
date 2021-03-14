@@ -11,6 +11,8 @@ app.post("/courses", (request, response) => {
 })
 
 app.put("/courses/:id", (request, response) => {
+    const params = request.params;
+    console.log(params);
     return response.json({courses: ["Curso 6", "Curso 2", "Curso 3", "Curso 4"]});
 })
 
